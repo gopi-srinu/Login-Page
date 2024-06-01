@@ -1,0 +1,300 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+:root {
+    font-size: 10px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body main {
+    width: 100%;
+    height: 100%;
+}
+
+body main section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(5, 4, 5);
+    color: white;
+}
+
+body main section article {
+    width: 60%;
+    height: 80%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 2rem;
+    gap: 1rem;
+}
+
+body main section article div {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(44, 53, 57);
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+
+body main section article div:nth-child(1) {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+body main section article div:nth-child(1) span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+body main section article div:nth-child(1) span h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+body main section article div:nth-child(1) span p {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+body main section article div:nth-child(1) span button {
+    width: 100%;
+    height: 5rem;
+    border-radius: .5rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+}
+
+body main section article div:nth-child(1) span button i {
+    font-size: 2.4rem;
+}
+
+body main section article div:nth-child(1) span button h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+body main section article div:nth-child(1) span button:nth-child(1) {
+    background-color: rgb(59, 89, 152);
+}
+
+body main section article div:nth-child(1) span button:nth-child(2) {
+    background-color: rgb(214, 45, 32);
+}
+
+body main section article div:nth-child(1) span button:nth-child(3) {
+    background-color: rgb(0, 0, 0);
+}
+
+body main section article div:nth-child(2) {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+body main section article div:nth-child(2) span:nth-child(1) {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+body main section article div:nth-child(2) span h2 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+body main section article div:nth-child(2) span h5 {
+    font-size: 1.6rem;
+}
+
+body main section article div:nth-child(2) span:nth-child(2) {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+body main section article div:nth-child(2) span input[type="text"],
+input[type="password"] {
+    width: 100%;
+    height: 5rem;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    padding: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-radius: .5rem;
+    outline: none;
+}
+
+
+body main section article div:nth-child(2) span:nth-child(3) {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+body main section article div:nth-child(2) span:nth-child(3) div {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: .5rem;
+    padding: 1rem;
+}
+
+body main section article div:nth-child(2) span:nth-child(3) div input[type="checkbox"] {
+    width: 2rem;
+    height: 1.6rem;
+}
+
+body main section article div:nth-child(2) span:nth-child(3) div p {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+body main section article div:nth-child(2) span:nth-child(3) h4 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+body main section article div:nth-child(2) button {
+    width: 80%;
+    height: 5rem;
+    border-radius: .5rem;
+    font-size: 2.4rem;
+    border: 2px solid black;
+    outline: none;
+    font-weight: 700;
+}
+
+body main section article div:nth-child(2) button:hover {
+    background-color: rgb(17, 180, 235);
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    body main section article {
+        width: 80%;
+    }
+
+    body main section article div:nth-child(1) {
+        width: 50%;
+        height: 100%;
+    }
+
+    body main section article div:nth-child(2) {
+        width: 50%;
+        height: 100%;
+    }
+
+    body main section article div:nth-child(2) span:nth-child(1) h2 {
+        font-size: 2.4rem;
+    }
+
+    body main section article div:nth-child(2) span:nth-child(1) h5 {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    body main section article div:nth-child(2) span:nth-child(1) {
+        width: 100%;
+    }
+
+    body main section article div:nth-child(2) span:nth-child(2) {
+        width: 100%;
+    }
+
+    body main section article div:nth-child(2) span:nth-child(3) {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body main section article {
+        width: 100%;
+        height: 80%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    body main section article {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    body main section article div {
+        width: 100%;
+        height: 100%;
+    }
+
+    body main section article div:nth-child(1) {
+        width: 100%;
+        height: 100%;
+    }
+
+    body main section article div:nth-child(1) span:nth-child(1){
+        h1{
+            font-size: 2.4rem;
+            font-weight: 800;
+        }
+        p{
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+    }
+
+    body main section article div:nth-child(1) span:nth-child(2){
+        display: flex;
+        gap: 1rem;
+    }
+
+    body main section article div:nth-child(2) {
+        width: 100%;
+        height: 100%;
+    }
+}
